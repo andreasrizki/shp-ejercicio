@@ -5,24 +5,15 @@
   "author": "Rizki Imam Andreas",
   "private": true,
   "dependencies": {
-    "@date-io/moment": "0.0.2",
     "@material-ui/core": "^3.0.3",
     "@material-ui/icons": "^3.0.1",
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.6",
-    "core-js": "^2.5.7",
-    "date-fns": "^1.29.0",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
-    "material-ui-pickers": "^2.0.5",
-    "moment": "^2.23.0",
     "prop-types": "^15.6.2",
-    "query-string": "^5.1.1",
-    "raven-js": "^3.27.0",
     "react": "^16.5.0",
-    "react-date-range": "^1.0.0-beta",
     "react-dom": "^16.5.0",
-    "react-gmaps": "^1.9.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.0.5",
@@ -45,7 +36,7 @@
       "global": {
         "branches": 80,
         "functions": 80,
-        "lines": 10,
+        "lines": 80,
         "statements": 80
       }
     },
