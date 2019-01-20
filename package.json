@@ -1,0 +1,95 @@
+{
+  "name": "shp-ejercicio",
+  "version": "1.0.0",
+  "description": "shopee exercise",
+  "author": "Rizki Imam Andreas",
+  "private": true,
+  "dependencies": {
+    "@date-io/moment": "0.0.2",
+    "@material-ui/core": "^3.0.3",
+    "@material-ui/icons": "^3.0.1",
+    "babel-polyfill": "^6.26.0",
+    "classnames": "^2.2.6",
+    "core-js": "^2.5.7",
+    "date-fns": "^1.29.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "material-ui-pickers": "^2.0.5",
+    "moment": "^2.23.0",
+    "prop-types": "^15.6.2",
+    "query-string": "^5.1.1",
+    "raven-js": "^3.27.0",
+    "react": "^16.5.0",
+    "react-date-range": "^1.0.0-beta",
+    "react-dom": "^16.5.0",
+    "react-gmaps": "^1.9.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.0.5",
+    "react-test-renderer": "^16.6.0",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "superagent": "^3.8.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest --coverage",
+    "test:watch": "jest --watchAll",
+    "test:updateSnapshot": "jest --updateSnapshot",
+    "eject": "react-scripts eject",
+    "prop-types": "^15.6.2"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 10,
+        "statements": 80
+      }
+    },
+    "clearMocks": true,
+    "collectCoverage": true,
+    "setupTestFrameworkScriptFile": "<rootDir>/config/setupTest.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@types/react-test-renderer": "^16.0.3",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.2",
+    "enzyme-to-json": "^3.3.4",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.5.0",
+    "jest-cli": "^23.5.0",
+    "redux-mock-store": "^1.5.3",
+    "superagent-mock": "^3.7.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
