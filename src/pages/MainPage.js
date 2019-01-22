@@ -23,14 +23,11 @@ import {
   withMobileDialog,
 } from '@material-ui/core';
 
-import { currenciesList } from '../const';
+import { currenciesList, defaultCurrency, currencyFormat } from '../const';
 import { getKeyID } from '../helpers';
 import { loadCurrencies } from '../actions';
 
 import CardCurrency from '../components/CardCurrency';
-
-const DEFAULT_CURRENCY = 'USD';
-const CURRENCY_FORMAT = '0,0.0000';
 
 class MainPage extends React.Component {
   static propTypes = {
@@ -72,7 +69,7 @@ class MainPage extends React.Component {
       modalAddCurrencyOpen: false,
       currencies: {
         rates: listArranged,
-        base: DEFAULT_CURRENCY,
+        base: defaultCurrency,
         date: '',
       },
       availableCurrencies: currenciesList,
@@ -194,7 +191,7 @@ class MainPage extends React.Component {
           <Card style={{ height: editNominal ? 155 : 100 }}>
             <CardContent style={{ marginTop: 10 }}>
               <Typography color="secondary" style={{ fontWeight: 'bold' }}>
-                {`${DEFAULT_CURRENCY} - United States Dollars`}
+                {`${defaultCurrency} - United States Dollars`}
                 <img
                   src="../../assets/shopee.png"
                   style={{ width: 50, float: 'right' }}
@@ -247,7 +244,7 @@ class MainPage extends React.Component {
                   component="h2"
                   style={{ marginTop: 10 }}
                 >
-                  {DEFAULT_CURRENCY}
+                  {defaultCurrency}
                   <Tooltip title="Change Me" placement="top">
                     <span
                       role="presentation"
@@ -258,7 +255,7 @@ class MainPage extends React.Component {
                       }}
                       onClick={() => this.setState({ editNominal: true })}
                     >
-                      {`$ ${numeral(initialValue).format(CURRENCY_FORMAT)}`}
+                      {`$ ${numeral(initialValue).format(currencyFormat)}`}
                     </span>
                   </Tooltip>
                 </Typography>

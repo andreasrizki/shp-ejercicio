@@ -1,5 +1,8 @@
 export const baseURL = 'https://api.exchangeratesapi.io';
 
+export const defaultCurrency = 'USD';
+export const currencyFormat = '0,0.0000';
+
 export const actionType = {
   GET_CURRENCIES: 'GET_CURRENCIES',
   GET_CURRENCIES_FAIL: 'GET_CURRENCIES_FAIL',

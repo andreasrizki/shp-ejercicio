@@ -10,7 +10,7 @@ import {
   Tooltip,
 } from '@material-ui/core';
 
-const CURRENCY_FORMAT = '0,0.0000';
+import { currencyFormat } from '../const';
 
 /**
  * Get currency exchange value
@@ -27,7 +27,7 @@ const getExchange = (rates, ID) => rates[ID];
  * @public
  */
 const handleCalculate = (initialValue, value) =>
-  numeral(Number(value) * Number(initialValue)).format(CURRENCY_FORMAT);
+  numeral(Number(value) * Number(initialValue)).format(currencyFormat);
 
 function CardCurrency(props) {
   const {

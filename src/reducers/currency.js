@@ -1,8 +1,13 @@
-import { actionType } from '../const';
+import { actionType, currenciesList, defaultCurrency } from '../const';
 
 const initialState = {
   data: {},
 };
+
+const listArranged = {};
+currenciesList.map((obj) => {
+  listArranged[obj.ID] = obj.initialValue;
+});
 
 export const currencyReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -15,7 +20,11 @@ export const currencyReducer = (state = initialState, action) => {
     case actionType.GET_CURRENCIES_FAIL:
       return {
         ...state,
-        data: {},
+        data: {
+          rates: listArranged,
+          base: defaultCurrency,
+          date: '',
+        },
       };
 
     default:
