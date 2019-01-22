@@ -67,7 +67,7 @@ function CardCurrency(props) {
               color="textSecondary"
               style={{ fontStyle: 'italic', fontSize: 12 }}
             >
-              {`1 USD = ${data.ID} ${getExchange(data.ID)}`}
+              {`1 USD = ${data.ID} ${getExchange(rates, data.ID)}`}
             </Typography>
           </Grid>
           <Grid item xs={2}>
