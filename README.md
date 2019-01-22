@@ -17,6 +17,6 @@
 
 1. Clone this repo
 2. `cd to/the/project/folder`
-3. Run `docker build -t mex-onboarding .`
-4. Run `docker run -p 80:80 mex-onboarding`
+3. Run `docker build -t shopee .`
+4. Run `docker run -p 80:80 shopee`
 5. Open you browser to [http://localhost](http://localhost)
