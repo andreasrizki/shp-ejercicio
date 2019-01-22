@@ -31,7 +31,7 @@ export const currenciesList = [
     ID: 'GBP',
     initialValue: 0,
     selected: false,
-    longName: 'Pound Sterling',
+    longName: 'British Pound',
     symbol: '£',
   },
   {
